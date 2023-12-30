@@ -10,15 +10,19 @@
     "dev": "live-server --open=./public/ --host=localhost --watch=./public/",
     "build": "NODE_ENV=production webpack",
     "prepare": "husky install",
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "eslint . --max-warnings=0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint"
     }
   },
   "lint-staged": {
-    "*.(js|jsx)": ["npm run lint:write", "git add"]
+    "*.(js|jsx)": [
+      "npm run lint:write",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
@@ -35,7 +39,7 @@
     "sass-loader": "^13.2.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
-	"eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb": "^19.0.4",
     "moment": "^2.30.1",
     "sass": "^1.69.6"
   },
