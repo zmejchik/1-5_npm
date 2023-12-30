@@ -17,12 +17,13 @@
     "babel-loader": "^9.1.0",
     "concurrently": "^7.6.0",
     "css-loader": "^6.7.3",
+    "eslint": "^8.56.0",
     "live-server": "^1.2.2",
     "mini-css-extract-plugin": "^2.7.2",
-    "sass": "^1.69.6",
     "postcss": "^8.4.20",
     "postcss-loader": "^7.0.2",
     "postcss-preset-env": "^7.8.0",
+    "sass": "^1.69.6",
     "sass-loader": "^13.2.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
@@ -40,5 +41,9 @@
     "ES6+",
     "live reload",
     "Sass"
-  ]
+  ],
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0"
+  }
 }
