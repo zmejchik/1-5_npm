@@ -1,15 +1,13 @@
 html {
   height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 100%;
 }
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -32,77 +30,23 @@ h5 {
 
 .wrapper {
   min-height: 100vh;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
-  -ms-grid-rows: auto 1fr auto;
   grid-template-rows: auto 1fr auto;
   line-height: 23px;
-}
-
-.wrapper > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.wrapper > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-
-.wrapper > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.wrapper > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-
-.wrapper > *:nth-child(5) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-}
-
-.wrapper > *:nth-child(6) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-}
-
-.wrapper > *:nth-child(7) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-.wrapper > *:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-}
-
-.wrapper > *:nth-child(9) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
 }
 .wrapper > * {
   grid-column: 2/-2;
 }
 .wrapper header {
   grid-column: 1/-1;
-  background: #fdbc9a url("../images/venice-italy.jpg") no-repeat center;
+  background: #fdbc9a url("../../docs/assets/images/venice-italy.jpg") no-repeat center;
   background-size: cover;
   height: 500px;
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   text-align: center;
 }
@@ -112,12 +56,8 @@ h5 {
 }
 .wrapper footer {
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .bacon > img {
@@ -125,4 +65,5 @@ h5 {
   display: block;
   margin: auto;
 }
+
 /*# sourceMappingURL=main.css.map */
