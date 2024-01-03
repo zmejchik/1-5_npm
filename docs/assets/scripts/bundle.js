@@ -44,8 +44,13 @@ function startTimer() {
   const updateTimer = () => {
     const currentTime = moment();
     const remainingTime = endDate.diff(currentTime, 'seconds');
-    if (remainingTime > 0) {
-      document.getElementsByClassName('digit-minute')[0].innerHTML = moment().format('mm:ss');
+    if (remainingTime >= 0) {
+      const minutes = Math.floor(remainingTime / 60);
+      const seconds = remainingTime - minutes * 60;
+      document.getElementsByClassName('digit-minute')[0].innerHTML = moment()
+        .minutes(minutes)
+        .second(seconds)
+        .format('mm:ss');
       setTimeout(updateTimer, 1000);
     }
   };
