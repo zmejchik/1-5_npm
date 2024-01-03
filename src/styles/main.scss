@@ -86,9 +86,9 @@
     }
   }
   .digit-minute {
-    font-size: 100px;
     font-weight: normal;
-    margin: 20% auto;
+    font-size: 6em;
+    margin: 100px auto;
     cursor: pointer;
     text-shadow: -1px -1px #fff, -2px -2px #fff, -1px 1px #fff, -2px 2px #fff,
       1px 1px #fff, 2px 2px #fff, 1px -1px #fff, 2px -2px #fff,
@@ -114,7 +114,10 @@
       color: #f137a6;
     }
   }
-
+  
+  .hidden{
+    display: none;
+  }
   footer {
     height: 50px;
     display: flex;

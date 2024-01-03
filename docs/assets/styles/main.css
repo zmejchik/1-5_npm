@@ -107,9 +107,9 @@ h5 {
   background-color: #fcdf5b;
 }
 .wrapper .digit-minute {
-  font-size: 100px;
   font-weight: normal;
-  margin: 20% auto;
+  font-size: 6em;
+  margin: 100px auto;
   cursor: pointer;
   text-shadow: -1px -1px #fff, -2px -2px #fff, -1px 1px #fff, -2px 2px #fff, 1px 1px #fff, 2px 2px #fff, 1px -1px #fff, 2px -2px #fff, -3px -3px 2px #bbb, -3px 3px 2px #bbb, 3px 3px 2px #bbb, 3px -3px 2px #bbb;
   color: steelblue;
@@ -131,6 +131,9 @@ h5 {
 .wrapper .start-button:hover {
   box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
   color: #f137a6;
+}
+.wrapper .hidden {
+  display: none;
 }
 .wrapper footer {
   height: 50px;
