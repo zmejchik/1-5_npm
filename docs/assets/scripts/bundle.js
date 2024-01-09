@@ -9,8 +9,7 @@ function changeMinute(directChangeMinute) {
   if (directChangeMinute === 'plusone') {
     countMinute += 1;
   }
-a78
-  divLabelMinutes.innerHTML = countMinute;
+35  divLabelMinutes.innerHTML = countMinute;
 }
 
 function hiddenAllButtons() {
