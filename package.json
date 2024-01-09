@@ -44,6 +44,7 @@
     "Sass"
   ],
   "dependencies": {
+    "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
     "husky": "^8.0.3"
   },
