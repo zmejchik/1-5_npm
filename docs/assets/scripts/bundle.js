@@ -8,9 +8,8 @@ function changeMinute(directChangeMinute) {
   }
   if (directChangeMinute === 'plusone') {
     countMinute += 1;
-    
   }
-
+a7
   divLabelMinutes.innerHTML = countMinute;
 }
 
