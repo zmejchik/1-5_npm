@@ -7,8 +7,8 @@ function changeMinute(directChangeMinute) {
     if (countMinute !== 0) countMinute -= 1;
   }
   if (directChangeMinute === 'plusone') {
-    
     countMinute += 1;
+    
   }
 
   divLabelMinutes.innerHTML = countMinute;
